@@ -1,0 +1,46 @@
+// COLOR VARIABLES
+$color-primary: #6200EA;
+$color-secondary: #211138;
+$color-grey-dark: #B2ACBA;
+$color-grey-light: #F4F3F5;
+$color-white: #fff;
+
+// FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+
+//MEDIA QUERIES
+// $bp-largest: 93.75em; // 1500px
+$bp-large: 87.5em; // 1400px
+$bp-medium: 75em; // 1200px
+$bp-small: 59.375em; // 950px
+$bp-smaller: 53.125em; // 850px
+$bp-smallest: 34.375em; // 850px
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px === 62.5%
+}
+
+body{
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: [margin-left-start] 1fr [margin-left-end contact1-start] 33.75vw [contact1-end contact2-start] 33.75vw [contact2-end margin-right-start] 1fr [margin-right-end];
+  grid-template-rows: 8rem auto 10rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+
+  background-color: $color-grey-light;
+}
